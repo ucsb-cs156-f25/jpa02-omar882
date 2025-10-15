@@ -32,6 +32,9 @@ public class TeamTest {
         Team team3 = new Team("different-team");
         assertTrue(!team.equals(team3));
         assertTrue(!team.equals(null));
+
+        team2.addMember("Omar");
+        assertTrue(!team.equals(team2));
     }
 
     @Test
